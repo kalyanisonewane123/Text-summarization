@@ -49,7 +49,8 @@ if st.button("Transcribe"):
         st.text_area("Transcribed Text", st.session_state.transcription, height=200)
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+api_key = st.secrets["GOOGLE_API_KEY"]
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-pro')
 prompt = """please summarize the provided text, make sure it covers all details"""
 
