@@ -2,7 +2,6 @@ streamlit
 transformers
 torch
 librosa
-io
-google.generativeai as genai
-os
+google-generative-ai
 python-dotenv
+
