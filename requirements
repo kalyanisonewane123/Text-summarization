@@ -1,8 +1,8 @@
-import streamlit as st
-from transformers import pipeline
-import torch
-import librosa
-import io
-import google.generativeai as genai
-import os
-from dotenv import load_dotenv
+streamlit
+transformers
+torch
+librosa
+io
+google.generativeai as genai
+os
+python-dotenv
